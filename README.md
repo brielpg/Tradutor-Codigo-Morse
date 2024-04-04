@@ -1,24 +1,24 @@
 # Tradutor de Código Morse
 
 
-## Visão Geral
+## 🌟 Visão Geral
 
 Este projeto consiste em um site onde os usuários podem inserir texto ou código Morse e obter a tradução correspondente. Ele foi desenvolvido como uma ferramenta útil para pessoas interessadas em comunicação em código Morse.
 
-## Funcionalidades
+## ⚙️ Funcionalidades
 
 - Tradução de texto para código Morse.
 - Tradução de código Morse para texto.
 - Interface simples e fácil de usar.
 
-## Como Usar
+## 🚀 Como Usar
 
 1. Abra o site do Tradutor de Código Morse.
 2. Insira o texto desejado no campo de entrada.
 3. Clique no botão correspondente para traduzir para código Morse ou texto.
 4. Visualize o resultado da tradução.
 
-## IMAGENS
+## 🖼️ IMAGENS
 ### 1. PC
 ![image](https://github.com/brielpg/Tradutor-Codigo-Morse/assets/144123550/71dbb974-1d20-4fec-bd45-8d6437c0cb81)
 
@@ -34,14 +34,14 @@ Este projeto consiste em um site onde os usuários podem inserir texto ou códig
 ### 4. TRADUÇÃO
 ![image](https://github.com/brielpg/Tradutor-Codigo-Morse/assets/144123550/0c55a189-ca11-4001-b1ab-b78608c2c46c)
 
-## Contribuindo
+## 🤝 Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue se encontrar algum problema ou sugerir melhorias para o projeto. Se desejar contribuir com código, faça um fork deste repositório, faça suas alterações e envie um pull request.
 
-## Licença
+## 📝 Licença
 
 Este projeto é protegido pela Licença para uso e distribuição do Projeto Tradutor Codigo Morse. Para mais detalhes, consulte o arquivo [LICENSE](https://github.com/brielpg/Tradutor-Codigo-Morse/blob/main/Licence).
 
-## Autor
+## 👨‍💻 Autor
 
 Desenvolvido por [Gabriel "brielpg"](https://github.com/brielpg).
