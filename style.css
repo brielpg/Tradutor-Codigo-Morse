@@ -20,6 +20,8 @@ body *{
     align-items: center;
 }
 
+.bounce-arrow{display: none;}
+
 /*                     */
 /*      TOP MAIN       */
 /*                     */
@@ -35,9 +37,7 @@ body *{
     transition: background 0.2s linear;
 }
 
-.top-main .checkbox, .label{
-    margin-right: 2%;
-}
+.top-main .checkbox, .label{margin-right: 2%;}
 
 .checkbox {
     opacity: 0;
@@ -207,7 +207,7 @@ body *{
     outline: none;
     border-radius: 20px;
 
-    font-size: 12pt;
+    font-size: 20pt;
     padding: 15px;
 
     background-color: #666666;
@@ -247,33 +247,24 @@ body *{
 /*                      */
 /*      LIGHT MODE      */
 /*                      */
-.light .main{
-    background-color: #D6D6D6;
-}
-
-.light .label{
-    background-color: #D9D9D9;
-}
+.light .main{background-color: #D6D6D6;}
+.light .label{background-color: #D9D9D9;}
 
 .light .top-main,
 .light .card-left-main,
-.light .card-right-main{
-    background-color: #BEBEBE;
-}
+.light .card-right-main{background-color: #BEBEBE;}
 
 .light h1,
-.light label{
-    color: #484848;
-}
+.light label{color: #484848;}
+
+.light .bounce-arrow{background-image: url('arrowLight.png');}
 
 .light .botoes > button{
     background-color: #2F8CE3;
     box-shadow: 0px 10px 15px  #2F8CE340;
 }
 
-.light .botoes > button:hover{
-    background-color: #297bc7;
-}
+.light .botoes > button:hover{background-color: #297bc7;}
 
 .light .card-left-main > button{
     border: 6px solid #2F8CE3;
@@ -306,7 +297,7 @@ body *{
     to {
       transform: translateX(0);
     }
-  }
+}
 
 @keyframes fadeIn {
     0% {
@@ -315,4 +306,102 @@ body *{
     100% {
       opacity: 1;
     }
-  }
+}
+
+@keyframes bounceArrow {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-20px);}
+	60% {transform: translateY(-10px);}
+}
+
+/*                             */
+/*      OUTRAS RESOLUCOES      */
+/*                             */
+@media only screen and (max-width: 1100px){
+    .main{
+        width: 100vw;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .top-main{
+        position: relative;
+    }
+
+    .top-main .checkbox, .label{margin-right: 4%;}
+
+    .bounce-arrow{
+        display: block;
+        width: 102px;
+        height: 102px;
+        background-image: url('arrow.png');
+        background-size: cover;
+        animation: bounceArrow 2s ease infinite;
+    }
+
+    /*   1100PX LEFT MAIN */
+    /*                    */
+    .left-main{width: 100vw;}
+    .card-left-main{width: 65%;}
+    .card-left-main > h1{font-size: 3.2vw;}
+    .card-left-main > label{font-size: 2vw;}
+    .card-left-main > button{font-size: 2vw;}
+
+    /*   1100PX RIGHT MAIN */
+    /*                     */
+    .right-main{width: 100vw;}
+    .card-right-main > h1{font-size: 3vw;}   
+    .textfield > label{font-size: 2vw;}
+    
+    .textfield > input{
+        font-size: 18pt;
+        padding: 25px;
+    }
+    
+    .botoes > button{font-size: 2vw;}
+}
+
+@media only screen and (max-width: 600px){
+    .bounce-arrow{display: none;}
+
+    .top-main{
+        position: relative;
+        height: 10vh;
+    }
+
+    .left-main{display: none;}
+
+    .right-main{
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .card-right-main{
+        width: 100%;
+        height: 90%;
+    }
+
+    .textfield > input{
+        font-size: 12pt;
+        padding: 22px;
+    }
+
+    .textfield{
+        margin-bottom: 35px;
+    }
+
+    .card-right-main > h1{font-size: 6.2vw;}   
+    .textfield > label{font-size: 4vw;}
+
+    .botoes{
+        flex-direction: column;
+        gap: 25%;
+        width: 100%;
+    }
+    
+    .botoes > button{
+        width: 100%;
+        padding: 14px;
+        font-size: 3vw;
+    }
+}
