@@ -40,7 +40,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue se enc
 
 ## Licença
 
-Este projeto é protegido pela Licença para uso e distribuição do Projeto Tradutor Codigo Morse. Para mais detalhes, consulte o arquivo [LICENSE](LICENSE).
+Este projeto é protegido pela Licença para uso e distribuição do Projeto Tradutor Codigo Morse. Para mais detalhes, consulte o arquivo [LICENSE](https://github.com/brielpg/Tradutor-Codigo-Morse/blob/main/Licence).
 
 ## Autor
 
