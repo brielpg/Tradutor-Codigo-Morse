@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tradutor Código Morse</title>
+</head>
+<body>
+    <div class="top-main">
+        <input type="checkbox" class="checkbox" id="chk"/>
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    <div class="main">
+        <div class="left-main">
+            <div class="card-left-main">
+                <h1>CURIOSIDADE</h1>
+                <label for="curiosidade">
+                    O código Morse é um sistema de codificação que utiliza sequências de sinais, como pontos e traços, para representar letras, números e sinais de pontuação. Ele foi desenvolvido por Samuel Morse e Alfred Vail na década de 1830 para ser usado com o telégrafo elétrico e ainda é amplamente reconhecido e utilizado hoje em dia.
+                    <br>A codificação básica do código Morse consiste em representar cada letra do alfabeto, número e alguns sinais de pontuação por uma sequência específica de pontos e traços.
+                    <br>O código Morse é frequentemente utilizado em comunicações de longa distância quando a transmissão de voz não é possível ou prática, como em comunicações via rádio, sinalização marítima, comunicações militares e telecomunicações de emergência.
+                </label>
+                <button>SAIBA MAIS</button>
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="card-right-main">
+                <h1>TRADUTOR CÓDIGO MORSE</h1>
+                <div class="textfield">
+                    <label for="texto">TEXTO</label>
+                    <input type="text" name="texto" placeholder="Digite aqui seu texto">
+                </div>
+                <div class="textfield">
+                    <label for="codigo">CÓDIGO</label>
+                    <input type="text" name="codigo" placeholder="Digite aqui seu codigo">
+                </div>
+                <div class="botoes">
+                    <button class="btn-morsetotext">MORSE > TEXTO</button>
+                    <button class="btn-texttomorse">TEXTO > MORSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
